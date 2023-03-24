@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "lerna": "^6.5.1"
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test --scope={web-client,server-api}",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "version": "1.0.0",
+  "name": "dipeshmalvia",
+  "workspaces": [
+    "packages/*"
+  ]
+}
